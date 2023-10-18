@@ -38,7 +38,7 @@ for product in products:
     ET.SubElement(item, 'image_link').text = image
     for additional_image in additional_images:
         ET.SubElement(item, 'additional_image_link').text = additional_image
-    ET.SubElement(item, 'availability').text = 'in stock'  # You can adjust availability as needed
+    ET.SubElement(item, 'availability').text = 'in stock'
     ET.SubElement(item, 'price').text = f'{price} HUF'
     ET.SubElement(item, 'brand').text = manufacturer_name
     ET.SubElement(item, 'condition').text = 'new'
